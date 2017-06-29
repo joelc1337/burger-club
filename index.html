@@ -17,32 +17,19 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     
     <!--modal-->
-    <link href="modal.css" rel="stylesheet" >
-    <!--<script type="text/javascript" src="modal.js"></script>-->
     
     <!--externals-->
     <link href="style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="script.js"></script>
     
+    <script type="text/javascript" src="modal.js"></script>
+    <link href="modal.css" rel="stylesheet" >
+
+
   </head>
 
   <body>
-
-      <!--Modal Popup taken from w3-->
-      <!-- Trigger/Open The Modal -->
-    <button id="myBtn">Open Modal</button>
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-    
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
-      </div>
-    
-    </div>
 
     <nav class="navbar  navbar-fixed-top">
       <div class="container">
@@ -64,11 +51,11 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-  
+
     <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
+      <div class="container-fluid              ">
     
-    
+
   
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -111,6 +98,29 @@
 
       <div class="footer">
         <div class="container">
+          <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary btn-lg" >
+                Launch demo modal
+              </button>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+              
+              
             <div class="col-sm-3">
               <p class="lead"> 
               Visit Us
@@ -123,7 +133,7 @@
             <p class="lead">Contact Us</p>
             <input id="name" class="form-control" type="text" name="name" placeholder="Your Name"/>
             <input id="email" class="form-control" type="text" name="email" placeholder="E-mail"/>
-            <button id="myBtn" class="btn btn-primary">Sign up</button>
+            <button id="myBtn" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Sign up</button>
             </div>
             <section id="social">
             <div class="col-sm-6">
