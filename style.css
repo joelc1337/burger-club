@@ -18,6 +18,10 @@
     color: #FFFFFF;
 }
 
+.navbar-brand:hover{
+    color:white;;
+}
+
 .jumbotron {
 	padding: 100px;
 	height: 500px;
@@ -50,9 +54,9 @@
 }
 
 
-.grey-light {
-    background-color: #f2f2f2;
-}
+/*.grey-light {*/
+/*    background-color: #f2f2f2;*/
+/*}*/
 
 .orange {
 	background-color: #EF5330;
@@ -133,7 +137,7 @@ img {
      /*overflow:hidden;*/
  }
  .social:hover{
-     color:blue;
+     
  }
  
  input{
@@ -141,4 +145,18 @@ img {
  }
  button{
      margin-top:10px;
- }
+ }  
+.modal-body{
+    color:black;
+}
+
+.nav li > a:hover{
+    background:#D62F01;
+}
+
+#social li:hover{
+    transform:scale(1.2);
+
+}
+    
+
