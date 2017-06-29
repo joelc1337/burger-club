@@ -46,6 +46,7 @@
       <p>Hours:11:30AM–11:30PM</p>
       <p>Phone: (718) 777-7788</p>
       <hr>
+      <!--<p>Address: 85 Broad St. New York, New York. </p>-->
     </div>
     
     <!--<div class="col-sm-9">-->
@@ -55,6 +56,9 @@
     
     
     <script>
+    
+      var iconimg = "../hamburger.png"
+      iconimg = new google.maps.Size(10, 10)
       var map;
       function initMap() {
         var uluru = {lat: 40.7661763, lng: -73.9206756};
@@ -64,7 +68,13 @@
         });
         var marker = new google.maps.Marker({
           position: uluru,
-          map: map
+          map: map,
+          icon: iconimg
+        });
+        var marker2 = new google.maps.Marker({
+          position: {lat:40.704065, lng:-74.011455},
+          map: map,
+          icon: iconimg,
         });
       }
     </script>
